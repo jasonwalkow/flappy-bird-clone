@@ -1,3 +1,7 @@
-body {
-	
+$sky-blue: #8BC1FF;
+$karla: 'Karla', sans-serif;
+
+html {
+	background-color: $sky-blue;
+	font-family: $karla;
 }

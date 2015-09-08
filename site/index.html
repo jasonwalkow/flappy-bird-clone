@@ -6,57 +6,54 @@
         <title>Flappy Bird Clone Landing Page</title>
         <meta name="description" content="Flappy Bird Game Clone Landing Page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/flappy_fav.ico" type="image/x-icon">
+        <link rel="icon" href="img/flappy_fav.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">home</a>
-                </li>
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
-            </ul>
-        </nav>
+        <img src="img/flappy.png" alt="Flappy Bird Icon" class="flappy-icon">
         <header>
             <h1>Flappy Bird</h1>
         </header>
         <section class="intro">
             <p>The most addictive game of the 21st century!</p>
+            <a href="#"><button>Play Now!</button></a>
+            <a href="#features">Or learn more</a>
         </section>
         <section class="features">
+        <a name="features"></a>
             <ul>
                 <li>
-                    <img src="images/screenshot-1.jpg">
+                    <img src="img/flappy.png" alt="Flappy Bird Icon" class="small-flappy-icon">
                     <h2>Fly around!</h2>
                     <p>Dodge with Flappy Bird using easy controls.</p>
                 </li>
                 <li>
-                    <img src="images/screenshot-2.jpg">
+                    <img src="img/flappy.png" alt="Flappy Bird Icon" class="small-flappy-icon">
                     <h2>Get a high score!</h2>
                     <p>Play and play and play to master the game.</p>
                 </li>
                 <li>
-                    <img src="images/screenshot-3.jpg">
+                    <img src="img/flappy.png" alt="Flappy Bird Icon" class="small-flappy-icon">
                     <h2>Share your score!</h2>
-                    <p>SHow your friends how good you are at Flappy Bird.</p>
+                    <p>Show your friends how good you are at Flappy Bird.</p>
                 </li>
             </ul>
         </section>
-        <section class="call-to-action">
-            <a href="#">Play Now!</a>
-        </section>
         <footer>
-            <div class="social">Twitter, Facebook, and Google+ share buttons</div>
+            <div class="social">
+                <h4>Share Flappy Bird on Social Media!</h4>
+                <ul>
+                    <li class=""><a target="_blank" href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons"><i class="fa fa-twitter-square"></i></a></li>
+                    <li class=""><a target="_blank" href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com"><i class="fa fa-facebook-square"></i></a></li>
+                    <li class=""><a target="_blank" href="https://plus.google.com/share?url=https://simplesharebuttons.com"><i class="fa fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
             <p>More footer stuff. Probably copyrights and links to terms of use and privacy statements.</p>
         </footer>
     </body>
+</html>
