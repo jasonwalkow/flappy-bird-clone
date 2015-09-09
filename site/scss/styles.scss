@@ -1,7 +1,2 @@
-$sky-blue: #8BC1FF;
-$karla: 'Karla', sans-serif;
+@import "base/base";
 
-html {
-	background-color: $sky-blue;
-	font-family: $karla;
-}

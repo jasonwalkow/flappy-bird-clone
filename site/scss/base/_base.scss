@@ -1,0 +1,14 @@
+@import "variables";
+@import "buttons";
+@import "typography";
+
+html {
+	background-color: $sky-blue;
+	font-family: $karla;
+}
+
+header {
+	background: url("../img/flappy-background.png");
+	@include background;
+	height: 100vh;
+}
