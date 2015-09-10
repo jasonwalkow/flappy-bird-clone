@@ -2,19 +2,17 @@
 @import "buttons";
 @import "typography";
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 body {
 	font-family: $karla;
 	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-ul li {
-	list-style: none;
+	background-color: $sky-blue;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -52,8 +50,10 @@ header {
 }
 
 .by-line {
+	padding: 1rem;
+	font-weight: bolder;
 	font-style: italic;
-	color: #fff;
+	color: $flappy-white;
 	@media screen and #{$tablet} {
 		font-size: 1.5rem;
 	}
@@ -65,13 +65,43 @@ header {
 	font-weight: bold;
 }
 
+/*===================================
+FEATURES STYLES
+===================================*/
+
+.features-title {
+	font-size: 1.5rem;
+	color: $flappy-orange;
+	font-weight: bolder;
+	padding: 2rem;
+	@media screen and #{$tablet} {
+		font-size: 2.5rem;
+	}
+}
+
+.features-items {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.features-items li {
+	list-style: none;
+	padding: 2rem;
+	@media screen and #{$tablet} {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+	}
+}
+
 .small-flappy-icon {
 	width: 50%;
 	@media screen and #{$tablet} {
-		width: 30%;
+		width: 70%;
 	}
 	@media screen and #{$desktop} {
-		width: 25%;
+		width: 80%;
 	}
 }
 
@@ -79,8 +109,51 @@ header {
 	background-color: $flappy-yellow;
 }
 
+.sub-title {
+	font-size: 1.5rem;
+	color: $flappy-purple;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+.sub-description {
+	color: #313131;
+}
+
+/*===================================
+FOOTER STYLES
+===================================*/
+
 footer {
 	background-color: $flappy-purple;
+	color: $flappy-white;
+	padding: 1rem;
 }
+
+.social-icons {
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons li {
+	color: $flappy-yellow;
+	font-size: 3rem;
+	list-style: none;
+	display: inline-block;
+	padding: 1rem;
+}
+
+.social-icons li:hover {
+	color: $flappy-orange;
+}
+
+.copy {
+	font-size: 0.75rem;
+	padding: 2rem 2rem;
+	@media screen and #{$tablet} {
+		font-size: 1rem;
+	}
+}
+
 
 

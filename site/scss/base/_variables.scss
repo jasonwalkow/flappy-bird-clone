@@ -3,6 +3,7 @@ $flappy-yellow: #F9F130;
 $flappy-yellow-shadow: #E0D829;
 $flappy-orange: #EC6548;
 $flappy-purple: #533846;
+$flappy-white: #FDFFFA;
 $karla: 'Karla', sans-serif;
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1024px)";
@@ -29,9 +30,23 @@ $desktop: "(min-width: 1024px)";
   	border-radius: 30px;
   	box-shadow: 0 8px $flappy-yellow-shadow;
   	cursor: pointer;
+  	&:hover {
+  		opacity: 0.9;
+  	}
+  	&:active {
+  		background-color: $flappy-yellow;
+  		box-shadow: 0 2px $flappy-yellow;
+  		transform: translateY(10px);
+  	}
+  	&:focus {
+  		outline: 0;
+  	}
 }
 
 @mixin link {
 	text-decoration: none;
 	color: inherit;
+	&:hover {
+  		color: $flappy-orange;
+  	}
 }
