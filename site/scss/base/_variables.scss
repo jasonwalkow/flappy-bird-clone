@@ -1,11 +1,37 @@
 $sky-blue: #8BC1FF;
+$flappy-yellow: #F9F130;
+$flappy-yellow-shadow: #E0D829;
+$flappy-orange: #EC6548;
+$flappy-purple: #533846;
 $karla: 'Karla', sans-serif;
-$tablet: 'min-width: 768px';
-$desktop: 'min-width: 1024px';
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
 
 @mixin background {
   background-position: center-bottom;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto
+}
+
+@mixin button {
+	font-family: $karla;
+	letter-spacing: 0.2rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $flappy-orange;
+	margin: 1rem;
+	width: 50%;
+	padding: 1.25rem 1rem 1rem 1rem;
+  	background-color: $flappy-yellow;
+  	border: none;
+  	border-radius: 30px;
+  	box-shadow: 0 8px $flappy-yellow-shadow;
+  	cursor: pointer;
+}
+
+@mixin link {
+	text-decoration: none;
+	color: inherit;
 }

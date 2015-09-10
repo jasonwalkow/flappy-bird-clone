@@ -2,13 +2,85 @@
 @import "buttons";
 @import "typography";
 
-html {
-	background-color: $sky-blue;
+body {
 	font-family: $karla;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	@include link;
 }
 
 header {
 	background: url("../img/flappy-background.png");
 	@include background;
 	height: 100vh;
+	text-align: center;
 }
+
+.flappy-icon {
+	width: 30%;
+	margin-top: 2rem;
+	@media screen and #{$tablet} {
+		width: 20%;
+		margin-top: 3rem;
+	}
+	@media screen and #{$desktop} {
+		width: 15%;
+		margin-top: 1.25rem;
+	}
+}
+
+.flappy-logo {
+	width: 70%;
+	@media screen and #{$tablet} {
+		width: 60%;
+	}
+	@media screen and #{$desktop} {
+		width: 50%;
+	}
+}
+
+.by-line {
+	font-style: italic;
+	color: #fff;
+	@media screen and #{$tablet} {
+		font-size: 1.5rem;
+	}
+}
+
+.learn-more {
+	font-size: 1.25rem;
+	color: $flappy-purple;
+	font-weight: bold;
+}
+
+.small-flappy-icon {
+	width: 50%;
+	@media screen and #{$tablet} {
+		width: 30%;
+	}
+	@media screen and #{$desktop} {
+		width: 25%;
+	}
+}
+
+.features {
+	background-color: $flappy-yellow;
+}
+
+footer {
+	background-color: $flappy-purple;
+}
+
+

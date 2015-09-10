@@ -1,0 +1,11 @@
+@import "variables";
+
+.play-now-big {
+	@include button;
+	@media screen and #{$tablet} {
+		width: 30%;
+	}
+	@media screen and #{$desktop} {
+		width: 20%;
+	}
+}
