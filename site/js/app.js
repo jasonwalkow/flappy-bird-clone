@@ -47,21 +47,6 @@ $(document).ready( function() {
     });
 });
 
-/*window.onscroll = scrollListen;
-
-function scrollListen() {
-    if (document.body.scrollTop > 200) {
-    	animateScreenshots();
-    } else {
-    }
-}
-
-function animateScreenshots() {
-	$('.features-items').velocity('transition.slideUpBigIn', {
-    	opacity: [1, 0],
-    	duration: 1000,
-	})
-};*/
 
 
 
