@@ -443,8 +443,6 @@ th {
   border-radius: 30px;
   box-shadow: 0 8px #E0D829;
   cursor: pointer; }
-  .play-now-big:hover {
-    opacity: 0.9; }
   .play-now-big:active {
     background-color: #F9F130;
     box-shadow: 0 2px #F9F130;

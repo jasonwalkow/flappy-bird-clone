@@ -30,9 +30,6 @@ $desktop: "(min-width: 1024px)";
   	border-radius: 30px;
   	box-shadow: 0 8px $flappy-yellow-shadow;
   	cursor: pointer;
-  	&:hover {
-  		opacity: 0.9;
-  	}
   	&:active {
   		background-color: $flappy-yellow;
   		box-shadow: 0 2px $flappy-yellow;
