@@ -10,10 +10,16 @@
         <link rel="icon" href="img/flappy_fav.ico" type="image/x-icon">
         <link href='https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles.css">
+        <script async src="js/picturefill.min.js"></script>
     </head>
     <body>
         <header>
-            <img src="img/flappy.png" alt="Flappy Bird Icon" class="flappy-icon">
+            <picture>
+                <source srcset="img/flappy_lg.png" media="(min-width: 1024)">
+                    <source srcset="img/flappy_md.png" media="(min-width: 740px)">
+                        <source srcset="img/flappy_sm.png" media="(min-width: 320px)">
+                            <img src="img/flappy.png" alt="Flappy Bird Icon" class="flappy-icon">
+            </picture>
             <br>
             <img src="img/flappy-bird-logo.png" alt="Flappy Bird Logo" class="flappy-logo">
             <p class="by-line">"The most addictive game of the 21st century!"</p>
