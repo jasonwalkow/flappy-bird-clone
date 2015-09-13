@@ -40,6 +40,12 @@ $(document).ready( function() {
         .velocity("reverse");
     });
 
+    $('.flappy-logo').mouseenter(function(){
+    $(this)
+        .velocity({ scale: "1.2"}, 600, "easeInOut")
+        .velocity("reverse");
+    });
+
     $('.fa').mouseenter(function(){
     $(this)
         .velocity({ scale: "1.2"}, 200, "easeInOut")
