@@ -20,10 +20,16 @@ a {
 }
 
 header {
-	background: url("../img/flappy-background.png");
+	background: url("../img/flappy-background_sm.png");
 	@include background;
 	height: 100vh;
 	text-align: center;
+	@media screen and #{$tablet} {
+        background: url("../img/flappy-background_md.png");
+    }
+    @media screen and #{$desktop} {
+        background: url("../img/flappy-background_lg.png");
+    }
 }
 
 .flappy-icon {
