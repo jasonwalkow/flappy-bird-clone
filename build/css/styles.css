@@ -477,19 +477,13 @@ a {
     color: #EC6548; }
 
 header {
-  background: url("../img/flappy-background_sm.png");
+  background: url("../img/flappy-background_lg.png");
   background-position: center-bottom;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
   height: 100vh;
   text-align: center; }
-  @media screen and (min-width: 768px) {
-    header {
-      background: url("../img/flappy-background_md.png"); } }
-  @media screen and (min-width: 1024px) {
-    header {
-      background: url("../img/flappy-background_lg.png"); } }
 
 .flappy-icon {
   width: 30%;
